@@ -1,0 +1,41 @@
+{
+  "name": "@electron-react-proof-of-concept/electron",
+  "version": "0.0.0",
+  "description": "Proof of concept",
+  "homepage": "example.com",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Simon Törnqvist",
+    "email": "simon.thornqvist99@gmail.com"
+  },
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "cross-env NODE_ENV=development nodemon --watch src --ext ts --exec 'tsc && electron .'",
+    "build": "tsc && cp -r ../dist/ dist/renderer/",
+    "package": "electron-builder"
+  },
+  "build": {
+    "appId": "electron-react-proof-of-concept",
+    "productName": "electron-react-proof-of-concept",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "appImage"
+      ]
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3",
+    "nodemon": "^3.1.1",
+    "typescript": "^5.2.2"
+  }
+}
