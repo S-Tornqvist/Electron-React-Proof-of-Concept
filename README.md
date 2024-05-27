@@ -2,6 +2,8 @@
 
 This template provides a minimal setup to get React working in Electron + Vite with HMR and some ESLint + Prettier rules.
 
+The frontend is setup using the [Vite react-ts template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) with some customization in the configuration. The backend is a standard minimal Electron project using electron-builder for packaging.
+
 ## Development
 
 Start the project in development mode using:
