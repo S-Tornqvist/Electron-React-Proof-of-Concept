@@ -4,7 +4,6 @@
   "description": "Proof of concept",
   "homepage": "example.com",
   "license": "MIT",
-  "private": true,
   "author": {
     "name": "Simon Törnqvist",
     "email": "simon.thornqvist99@gmail.com"
